@@ -53,7 +53,7 @@ namespace blobfunction
             var subject = "File Uploaded Successfully";
             var to = new EmailAddress(recipientEmail, "Recipient Name");
             var plainTextContent = $"The file {fileName} has been uploaded to the BLOB storage. You can access it using the following link:\n\n" +
-                                   $"https://your-storage-account.blob.core.windows.net/your-container-name/{fileName}?{sasToken}";
+                                   $"https://vadymtsipkovskyinettest.blob.core.windows.net/vadymtsipkovskyinettest/{fileName}?{sasToken}";
             var htmlContent = plainTextContent; // You can customize the HTML email body if needed
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
 
